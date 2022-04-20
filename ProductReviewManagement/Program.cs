@@ -52,6 +52,10 @@ namespace ProductReviewManagementWithLinq
 
             productManagement.SelectedRecords(productReviewList);
 
+            //uc4
+            productManagement.RetrieveCountOfRecords(productReviewList);
+
+
 
 
 
