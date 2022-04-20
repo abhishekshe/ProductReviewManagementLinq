@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dell\\source\\repos\\shild\\shild\\shild.csproj",
-      "projectName": "shild",
-      "projectPath": "C:\\Users\\dell\\source\\repos\\shild\\shild\\shild.csproj",
+      "projectUniqueName": "D:\\BridgeLabz\\ProductReviewManagement\\ProductReviewManagement\\ProductReviewManagementWithLinq.csproj",
+      "projectName": "ProductReviewManagementWithLinq",
+      "projectPath": "D:\\BridgeLabz\\ProductReviewManagement\\ProductReviewManagement\\ProductReviewManagementWithLinq.csproj",
       "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dell\\source\\repos\\shild\\shild\\obj\\",
+      "outputPath": "D:\\BridgeLabz\\ProductReviewManagement\\ProductReviewManagement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
