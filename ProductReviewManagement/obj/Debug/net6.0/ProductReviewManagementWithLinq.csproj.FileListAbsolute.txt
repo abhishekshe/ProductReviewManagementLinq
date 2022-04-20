@@ -1,0 +1,15 @@
+D:\BridgeLabz\ProductReviewManagement\ProductReviewManagement\bin\Debug\net6.0\ProductReviewManagementWithLinq.exe
+D:\BridgeLabz\ProductReviewManagement\ProductReviewManagement\bin\Debug\net6.0\ProductReviewManagementWithLinq.deps.json
+D:\BridgeLabz\ProductReviewManagement\ProductReviewManagement\bin\Debug\net6.0\ProductReviewManagementWithLinq.runtimeconfig.json
+D:\BridgeLabz\ProductReviewManagement\ProductReviewManagement\bin\Debug\net6.0\ProductReviewManagementWithLinq.dll
+D:\BridgeLabz\ProductReviewManagement\ProductReviewManagement\bin\Debug\net6.0\ProductReviewManagementWithLinq.pdb
+D:\BridgeLabz\ProductReviewManagement\ProductReviewManagement\obj\Debug\net6.0\ProductReviewManagementWithLinq.csproj.AssemblyReference.cache
+D:\BridgeLabz\ProductReviewManagement\ProductReviewManagement\obj\Debug\net6.0\ProductReviewManagementWithLinq.GeneratedMSBuildEditorConfig.editorconfig
+D:\BridgeLabz\ProductReviewManagement\ProductReviewManagement\obj\Debug\net6.0\ProductReviewManagementWithLinq.AssemblyInfoInputs.cache
+D:\BridgeLabz\ProductReviewManagement\ProductReviewManagement\obj\Debug\net6.0\ProductReviewManagementWithLinq.AssemblyInfo.cs
+D:\BridgeLabz\ProductReviewManagement\ProductReviewManagement\obj\Debug\net6.0\ProductReviewManagementWithLinq.csproj.CoreCompileInputs.cache
+D:\BridgeLabz\ProductReviewManagement\ProductReviewManagement\obj\Debug\net6.0\ProductReviewManagementWithLinq.dll
+D:\BridgeLabz\ProductReviewManagement\ProductReviewManagement\obj\Debug\net6.0\refint\ProductReviewManagementWithLinq.dll
+D:\BridgeLabz\ProductReviewManagement\ProductReviewManagement\obj\Debug\net6.0\ProductReviewManagementWithLinq.pdb
+D:\BridgeLabz\ProductReviewManagement\ProductReviewManagement\obj\Debug\net6.0\ProductReviewManagementWithLinq.genruntimeconfig.cache
+D:\BridgeLabz\ProductReviewManagement\ProductReviewManagement\obj\Debug\net6.0\ref\ProductReviewManagementWithLinq.dll
