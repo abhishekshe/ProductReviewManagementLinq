@@ -50,10 +50,14 @@ namespace ProductReviewManagementWithLinq
             ProductManagement productManagement = new ProductManagement();
             //productManagement.TopRecords(productReviewList);
 
-            productManagement.SelectedRecords(productReviewList);
+          //  productManagement.SelectedRecords(productReviewList);
 
             //uc4
-            productManagement.RetrieveCountOfRecords(productReviewList);
+          //  productManagement.RetrieveCountOfRecords(productReviewList);
+            //uc5
+           // productManagement.retrieveProductIDandreview(productReviewList);
+            //uc6
+            productManagement.SkippingRecords(productReviewList);
 
 
 
