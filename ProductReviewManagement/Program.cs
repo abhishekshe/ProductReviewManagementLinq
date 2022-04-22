@@ -12,7 +12,7 @@ namespace ProductReviewManagementWithLinq
             Console.WriteLine("Welcome to Product Review Management");
             
 
-            //UC1
+           
             List<ProductReview> productReviewList = new List<ProductReview>()
             {
                 new ProductReview(){ProductId=1,UserId=1,Rating=5,Review="Good",isLike=true},
@@ -42,14 +42,14 @@ namespace ProductReviewManagementWithLinq
                 new ProductReview(){ProductId=25,UserId=11,Rating=4,Review="nice",isLike=true},
 
             };
-           
+            
             ProductManagement productManagement = new ProductManagement();
-            
-            
+           
             DataTableForProductManagement dataTableForProductManagement = new DataTableForProductManagement();
            
             dataTableForProductManagement.AddDataTable();
-            dataTableForProductManagement.CallForAverageRatings();
+            dataTableForProductManagement.CallForReviewRetrieval();
+
 
 
         }
