@@ -8,10 +8,9 @@ namespace ProductReviewManagementWithLinq
     {
         static void Main(string[] args)
         {
-            //master
+           
             Console.WriteLine("Welcome to Product Review Management");
-            //LinqToDataTable linqToDataTable = new LinqToDataTable();
-            //linqToDataTable.AddDataTable();
+            
 
             //UC1
             List<ProductReview> productReviewList = new List<ProductReview>()
@@ -43,25 +42,14 @@ namespace ProductReviewManagementWithLinq
                 new ProductReview(){ProductId=25,UserId=11,Rating=4,Review="nice",isLike=true},
 
             };
-            //foreach (var list in productReviewList)
-            //{
-            //    Console.WriteLine("ProductId:-" + list.ProductId + " UserId:-" + list.UserId + " Ratings:-" + list.Rating + " Review:-" + list.Review + " IsLike:-" + list.isLike);
-            //}
-            //UC2
+           
             ProductManagement productManagement = new ProductManagement();
-            //productManagement.TopRecords(productReviewList);
-            //UC3
-            //productManagement.SelectedRecords(productReviewList);
-            //UC4
-            //productManagement.countOfReviews(productReviewList);
-            //UC5
-            //productManagement.retrieveProductIDandreview(productReviewList);
-            //UC6
-            //productManagement.SkippingRecords(productReviewList);
-            //UC9
+            
+            
             DataTableForProductManagement dataTableForProductManagement = new DataTableForProductManagement();
+           
             dataTableForProductManagement.AddDataTable();
-            dataTableForProductManagement.CallForRetrievingData();
+            dataTableForProductManagement.CallForAverageRatings();
 
 
         }
