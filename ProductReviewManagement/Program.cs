@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProductReviewManagement;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 
@@ -58,6 +59,8 @@ namespace ProductReviewManagementWithLinq
            // productManagement.retrieveProductIDandreview(productReviewList);
             //uc6
             productManagement.SkippingRecords(productReviewList);
+
+           
 
 
 
