@@ -12,11 +12,11 @@ namespace ProductReviewManagementWithLinq
        
         public void TopRecords(List<ProductReview> listReview)
         {
-           
+            
             var recordedData = (from productReviews in listReview
                                 orderby productReviews.Rating descending
                                 select productReviews).Take(3);
-           
+            
             var recordData = listReview.OrderByDescending(r => r.Rating).Take(3);
             foreach (var list in recordData)
             {
@@ -24,12 +24,12 @@ namespace ProductReviewManagementWithLinq
             }
         }
 
-        
+       
         public void SelectedRecords(List<ProductReview> listReview)
         {
-           
+            
             var recordData = listReview.Where(r => r.Rating > 3 && (r.ProductId == 1 || r.ProductId == 4 || r.ProductId == 9)).ToList();
-           
+            
             var recordedData = (from productReviews in listReview
                                 where productReviews.Rating > 3 && (productReviews.ProductId == 1 || productReviews.ProductId == 4 || productReviews.ProductId == 9)
                                 select productReviews);
@@ -42,7 +42,7 @@ namespace ProductReviewManagementWithLinq
        
         public void countOfReviews(List<ProductReview> listProductReview)
         {
-           
+            
             var recordData = listProductReview.GroupBy(r => r.UserId).Select(r => new { productId = r.Key, count = r.Count() });
            
             var recordedData = from products in listProductReview
@@ -79,21 +79,21 @@ namespace ProductReviewManagementWithLinq
             }
 
         }
-       
+      
         public void RetrievingRecords(DataTable table)
         {
            
             var recordData = from products in table.AsEnumerable()
                              where (products.Field<string>("isLike") == true.ToString())
                              select products;
-           
+            
             var recordedData = table.AsEnumerable().Where(r => r.Field<string>("isLike") == true.ToString());
             foreach (var list in recordedData)
             {
                 Console.WriteLine("ProductId:-" + list.Field<string>("productId") + " UserId:-" + list.Field<string>("userId") + " Ratings:-" + list.Field<string>("ratings") + " Review:-" + list.Field<string>("reviews") + " IsLike:-" + list.Field<string>("isLike"));
             }
         }
-       
+        
         public void AverageRatingForUserId(List<ProductReview> productReviewList)
         {
             var recordData = productReviewList.GroupBy(r => r.UserId).Select(r => new { userId = r.Key, averageRatings = r.Average(x => x.Rating) });
@@ -121,12 +121,28 @@ namespace ProductReviewManagementWithLinq
         public void ReviewMessageRetrieval(DataTable table)
         {
             var recordData = table.AsEnumerable().Where(r => r.Field<string>("reviews") == "Average");
+            var recordedData = from products in table.AsEnumerable()
+                               where products.Field<string>("reviews") == "Average"
+                               select products;
             foreach (var list in recordData)
             {
                
                 Console.WriteLine("ProductId:-" + list.Field<string>("productId") + " UserId:-" + list.Field<string>("userId") + " Ratings:-" + list.Field<string>("ratings") + " Review:-" + list.Field<string>("reviews") + " IsLike:-" + list.Field<string>("isLike"));
             }
 
+        }
+        
+        public void SelectRecordsForUserId(DataTable table)
+        {
+            var recordData = table.AsEnumerable().Where(r => Convert.ToInt32(r.Field<string>("userid")) == 10).OrderBy(r => Convert.ToInt32(r.Field<string>("ratings")));
+            var recordedData = from products in table.AsEnumerable()
+                               where Convert.ToInt32(products.Field<string>("userid")) == 10
+                               orderby (Convert.ToInt32(products.Field<string>("ratings")))
+                               select products;
+            foreach (var list in recordedData)
+            {
+                Console.WriteLine("ProductId:-" + list.Field<string>("productId") + " UserId:-" + list.Field<string>("userId") + " Ratings:-" + list.Field<string>("ratings") + " Review:-" + list.Field<string>("reviews") + " IsLike:-" + list.Field<string>("isLike"));
+            }
         }
     }
 }
