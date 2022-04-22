@@ -1,5 +1,4 @@
-﻿using ProductReviewManagement;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 
@@ -9,11 +8,12 @@ namespace ProductReviewManagementWithLinq
     {
         static void Main(string[] args)
         {
-           
+            //master
             Console.WriteLine("Welcome to Product Review Management");
+            //LinqToDataTable linqToDataTable = new LinqToDataTable();
+            //linqToDataTable.AddDataTable();
 
-
-            
+            //UC1
             List<ProductReview> productReviewList = new List<ProductReview>()
             {
                 new ProductReview(){ProductId=1,UserId=1,Rating=5,Review="Good",isLike=true},
@@ -47,23 +47,21 @@ namespace ProductReviewManagementWithLinq
             //{
             //    Console.WriteLine("ProductId:-" + list.ProductId + " UserId:-" + list.UserId + " Ratings:-" + list.Rating + " Review:-" + list.Review + " IsLike:-" + list.isLike);
             //}
-
+            //UC2
             ProductManagement productManagement = new ProductManagement();
             //productManagement.TopRecords(productReviewList);
-
-          //  productManagement.SelectedRecords(productReviewList);
-
-            //uc4
-          //  productManagement.RetrieveCountOfRecords(productReviewList);
-            //uc5
-           // productManagement.retrieveProductIDandreview(productReviewList);
-            //uc6
-            productManagement.SkippingRecords(productReviewList);
-
-           
-
-
-
+            //UC3
+            //productManagement.SelectedRecords(productReviewList);
+            //UC4
+            //productManagement.countOfReviews(productReviewList);
+            //UC5
+            //productManagement.retrieveProductIDandreview(productReviewList);
+            //UC6
+            //productManagement.SkippingRecords(productReviewList);
+            //UC9
+            DataTableForProductManagement dataTableForProductManagement = new DataTableForProductManagement();
+            dataTableForProductManagement.AddDataTable();
+            dataTableForProductManagement.CallForRetrievingData();
 
 
         }
